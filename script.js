@@ -19,9 +19,11 @@ document.addEventListener("DOMContentLoaded", function () {
     "I love when you walk me home.",
     "I love when you make me eat salads when I complain about my weight and walk 20k steps with me.",
     "I love when we say the same thing at the same time.",
-    "I love that you're not the jealous type and act like my best friend every time I tell you things about my past.",
-    "I love that it's been 2 years since you've had a girlfriend.",
     "I love that you like blonde girls.",
+    "I love that I cost more than 300 Euros to give you a Black Jack",
+    "I love when you pity me when I tell you the most random heartbreaking stories",
+    "I love you when I hug you",
+    "I love that you needed artificial intelligence to tell you your own social class",
     "I love that I can wish you Happy Birthday today ! ",
   ];
   let currentSection = "intro";
@@ -80,39 +82,39 @@ document.addEventListener("DOMContentLoaded", function () {
     photos: [
       {
         src: "./images/photo1.png",
-        caption: "Our first adventure together ♥",
+        caption: "Our first toy kid Stick aka Nikusha ♥",
       },
       {
-        src: "./images/photo2.jpg",
-        caption: "That perfect sunset moment",
+        src: "./images/photo2.png",
+        caption: "Manifesting Pilates girl life",
       },
       {
-        src: "./images/photo3.jpg",
-        caption: "Laughing until our stomachs hurt",
+        src: "./images/photo3.png",
+        caption: "Chakhraniki minda",
       },
       {
-        src: "./images/photo4.jpg",
-        caption: "Your beautiful smile",
+        src: "./images/photo4.png",
+        caption: "Casual samshabati da paraksevi",
       },
       {
-        src: "./images/photo5.jpg",
-        caption: "Our cozy movie night",
+        src: "./images/photo5.png",
+        caption: "When you love someones son",
       },
       {
-        src: "./images/photo6.jpg",
-        caption: "Dancing in the kitchen",
+        src: "./images/photo6.png",
+        caption: "Pray!!",
       },
       {
-        src: "./images/photo7.jpg",
-        caption: "Beach day bliss",
+        src: "./images/photo7.png",
+        caption: "Princess Nikusha",
       },
       {
-        src: "./images/photo8.jpg",
-        caption: "Our favorite coffee shop",
+        src: "./images/photo8.png",
+        caption: "Pizdec",
       },
       {
-        src: "./images/photo9.jpg",
-        caption: "Making silly faces together",
+        src: "./images/photo9.png",
+        caption: "Bidasheni",
       },
     ],
 
