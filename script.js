@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentSongIndex = 0;
   let isPlaying = false;
   const songs = [
-    { id: 1, title: "Your First Chestpain", src: "./music/myLove.mp3" },
+    { id: 1, title: "Your First Chestpain", src: "./music/mylove.mp3" },
     {
       id: 2,
       title: "The First Song I Gave You",
