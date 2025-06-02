@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Happy Birthday, Love!</title>
+  </head>
+  <body>
+    <div class="container">
+      <section id="intro" class="section visible">
+        <h1>Happy Birthday, My Love!</h1>
+        <p class="intro-text">
+          I might not know a single thing about cars, but I do know how to love
+          you like a tech princess. Happy Birthday to the incredible boy who
+          lights up my world! Hope you have the most amazing day
+          <span class="heart">♥</span>
+        </p>
+        <button class="btn" id="startBtn">
+          Press the button, don’t refresh the page
+          <span class="heart">♥</span>
+        </button>
+      </section>
+
+      <section id="story" class="section hidden">
+        <h2>
+          Get ready... I’m about to spill all the things I’ve got for you!
+        </h2>
+        <div class="message-container" id="storyMessages"></div>
+        <button class="btn" id="nextAfterStory">
+          Continue <span class="heart">♥</span>
+        </button>
+      </section>
+
+      <!-- Music Section -->
+      <section id="music" class="section hidden">
+        <h2>A Soundtrack for Your Birthday</h2>
+        <p>I've selected some songs that remind me of us</p>
+        <p>Your backup playlist for when technology fails us</p>
+
+        <div class="audio-player">
+          <h3 id="nowPlaying">Choose a song to play</h3>
+
+          <audio id="audioPlayer" src=""></audio>
+
+          <div class="music-controls">
+            <button class="music-btn" id="prevBtn">◀</button>
+            <button class="music-btn" id="playBtn">▶</button>
+            <button class="music-btn" id="nextBtn">▶</button>
+          </div>
+
+          <div class="music-list" id="musicList">
+            <div class="music-item" data-song="1">
+              <span class="music-item-icon">♪</span>
+              <span>They would say it will fade, but again and again</span>
+            </div>
+            <div class="music-item" data-song="2">
+              <span class="music-item-icon">♪</span>
+              <span>Feel the rain on your skin</span>
+            </div>
+            <div class="music-item" data-song="3">
+              <span class="music-item-icon">♪</span>
+              <span>L-O-V-E Love the way you give it to me</span>
+            </div>
+            <div class="music-item" data-song="4">
+              <span class="music-item-icon">♪</span>
+              <span>Can I waste all your time here on the sidewalk?</span>
+            </div>
+            <div class="music-item" data-song="5">
+              <span class="music-item-icon">♪</span>
+              <span>Khelikhelchakidebulebi</span>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn" id="nextAfterMusic">
+          Continue <span class="heart">♥</span>
+        </button>
+      </section>
+
+      <section id="gallery" class="section hidden">
+        <h2>Our Beautiful Memories</h2>
+        <p>A collection of our favorite moments together</p>
+
+        <div class="gallery-container">
+          <div class="gallery-grid" id="galleryGrid"></div>
+        </div>
+
+        <button class="btn" id="nextAfterGallery">
+          Continue <span class="heart">♥</span>
+        </button>
+      </section>
+      <div id="photoModal" class="modal">
+        <div class="modal-content">
+          <span class="modal-close" id="modalClose">&times;</span>
+          <button class="modal-nav modal-prev" id="modalPrev">&#10094;</button>
+          <button class="modal-nav modal-next" id="modalNext">&#10095;</button>
+          <img id="modalImage" class="modal-image" src="" alt="" />
+          <div id="modalCaption" class="modal-caption"></div>
+          <div id="photoCounter" class="photo-counter"></div>
+        </div>
+      </div>
+      <section id="cake" class="section hidden">
+        <h2>Make a Wish!</h2>
+        <p>It's time to blow out your birthday candle!</p>
+
+        <div class="cake-container">
+          <div class="cake"></div>
+          <div class="frosting"></div>
+          <div class="cake-layer"></div>
+          <div class="cake-layer-2"></div>
+          <div class="candle"></div>
+          <div class="flame" id="flame"></div>
+          <div
+            class="strawberry"
+            style="bottom: 205px; left: 60px; transform: rotate(-20deg)"></div>
+          <div
+            class="strawberry"
+            style="bottom: 210px; left: 100px; transform: rotate(15deg)"></div>
+          <div
+            class="strawberry"
+            style="bottom: 200px; left: 180px; transform: rotate(-10deg)"></div>
+          <div
+            class="strawberry"
+            style="bottom: 205px; left: 220px; transform: rotate(25deg)"></div>
+          <div class="chocolate-drip" style="top: 125px; left: 30px"></div>
+          <div
+            class="chocolate-drip"
+            style="top: 125px; left: 70px; height: 40px"></div>
+          <div
+            class="chocolate-drip"
+            style="top: 125px; left: 120px; height: 25px"></div>
+          <div
+            class="chocolate-drip"
+            style="top: 125px; left: 180px; height: 35px"></div>
+          <div class="chocolate-drip" style="top: 125px; left: 230px"></div>
+
+          <div
+            class="sprinkles"
+            style="
+              bottom: 170px;
+              left: 50px;
+              background-color: #4caf50;
+              transform: rotate(45deg);
+            "></div>
+          <div
+            class="sprinkles"
+            style="
+              bottom: 175px;
+              left: 80px;
+              background-color: #ffc107;
+              transform: rotate(-30deg);
+            "></div>
+          <div
+            class="sprinkles"
+            style="
+              bottom: 180px;
+              left: 110px;
+              background-color: #2196f3;
+              transform: rotate(60deg);
+            "></div>
+          <div
+            class="sprinkles"
+            style="
+              bottom: 175px;
+              left: 160px;
+              background-color: #9c27b0;
+              transform: rotate(-45deg);
+            "></div>
+          <div
+            class="sprinkles"
+            style="
+              bottom: 170px;
+              left: 200px;
+              background-color: #ff5722;
+              transform: rotate(30deg);
+            "></div>
+          <div
+            class="sprinkles"
+            style="
+              bottom: 182px;
+              left: 230px;
+              background-color: #4caf50;
+              transform: rotate(-60deg);
+            "></div>
+          <div
+            class="sprinkles"
+            style="
+              bottom: 190px;
+              left: 70px;
+              background-color: #9c27b0;
+              transform: rotate(20deg);
+            "></div>
+          <div
+            class="sprinkles"
+            style="
+              bottom: 188px;
+              left: 130px;
+              background-color: #ffc107;
+              transform: rotate(-20deg);
+            "></div>
+          <div
+            class="sprinkles"
+            style="
+              bottom: 192px;
+              left: 180px;
+              background-color: #2196f3;
+              transform: rotate(40deg);
+            "></div>
+        </div>
+
+        <p class="blow-instruction">
+          <span class="mic-icon">🎤</span>Blow into your microphone to blow out
+          the candle!
+        </p>
+
+        <button class="btn hidden" id="nextAfterCake">
+          Continue <span class="heart">♥</span>
+        </button>
+      </section>
+
+      <section id="final" class="section hidden">
+        <h2>Happy Birthday!</h2>
+        <p class="final-message">I love you more than words can express.</p>
+        <p class="final-message">
+          Thank you for being the most amazing person in my life.
+        </p>
+        <p class="final-message">Here's to many more birthdays together!</p>
+
+        <div class="final-hearts">♥ ♥ ♥</div>
+
+        <button class="btn" id="restartBtn">
+          Start Over <span class="heart">♥</span>
+        </button>
+      </section>
+    </div>
+
+    <div class="nav-dots">
+      <div class="nav-dot active" data-section="intro"></div>
+      <div class="nav-dot" data-section="story"></div>
+      <div class="nav-dot" data-section="music"></div>
+      <div class="nav-dot" data-section="gallery"></div>
+      <div class="nav-dot" data-section="cake"></div>
+      <div class="nav-dot" data-section="final"></div>
+    </div>
+
+    <div class="falling-hearts" id="fallingHearts"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
